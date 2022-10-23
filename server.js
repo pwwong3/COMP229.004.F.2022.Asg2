@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('./config/app');
-var debug = require('debug')('comp229.004.f.2022.asg1:server');
+var app = require('./server/config/app');
+var debug = require('debug')('comp229.004.f.2022.asg2:server');
 var http = require('http');
 
 /**
