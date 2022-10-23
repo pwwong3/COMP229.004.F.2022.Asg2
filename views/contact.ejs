@@ -1,0 +1,36 @@
+<%-include partials/header.ejs%>
+    <%-include partials/main_nav.ejs%>
+    <%-include partials/content.ejs%>
+    <div class="container">
+        <h2>Contact us using the following details:</h2>
+        <!-- Personal information -->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <ul class="contact-detail">
+                    <li>
+                        <div>Phone Number:</div><div>647-327-0246</div>
+                    </li>
+                    <li>
+                        <div>Email:</div><div>pwon1@my.centennialcollege.ca</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2>Inquiry:</h2>
+        <!-- Form for inquiry -->
+        <form id="user_info" action="./contact" method="post">
+            <label for="first_name">First Name:</label>
+            <input id="first_name" name="first_name" />
+            <label for="last_name">Last Name:</label>
+            <input id="last_name" name="last_name" required />
+            <label for="contact_number">Contact Number:</label>
+            <input id="contact_number" name="contact_number" />
+            <label for="email">Email Address:</label>
+            <input id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <%-include partials/bottom_nav.ejs%>
+<%-include partials/footer.ejs%>

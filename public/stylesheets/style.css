@@ -1,0 +1,89 @@
+/**********************
+ * File name: style.css
+ * Name: Pak Wah WONG
+ * StudentID: 301255741
+ * Date: 2022.10.14
+**********************/
+
+/* General Setting */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Title */
+.content {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Home page */
+.home {
+  margin: 50px;
+}
+
+/* About me */
+.about-me {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: auto 250px;
+}
+
+/* Projects */
+.projects {
+  list-style: none;
+  margin: 50px;
+}
+
+/* Project */
+.project {
+  display: grid;
+  grid-template-columns: auto 500px;
+  padding: 1em;
+}
+
+/* Services */
+.services {
+  margin: 50px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Paragraphs in services */
+.services p {
+  margin: 1em;
+  display: block;
+  text-align: center;
+  font-size: large;
+}
+
+/* Contact */
+.contact {
+  margin: 50px;
+}
+
+/* Contact detail */
+.contact-detail {
+  list-style: none;
+}
+
+/* Each line in contact detail */
+.contact-detail li {
+  display: grid;
+  grid-template-columns: 8em auto;
+}
+
+/* Interactive form */
+#user_info {
+  display: grid;
+  grid-template-columns: 8em auto;
+  grid-gap: 1em;
+}
