@@ -6,5 +6,5 @@
 *******************************/
 
 module.exports = {
-    "URI": "mongodb+srv://assignment:MM8WCXJh3vGuIgIQ@cluster0.6i2fdln.mongodb.net/?retryWrites=true&w=majority"
+    "URI": "mongodb+srv://pak:VRxMJ0t5Qp9qViYd@mongodbserver.udrlyfl.mongodb.net/Portfolio?retryWrites=true&w=majority"
 }
