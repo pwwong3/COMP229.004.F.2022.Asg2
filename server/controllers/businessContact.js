@@ -15,7 +15,7 @@ const businessContactModel = require('../models/businessContact');
 const BusinessContact = businessContactModel.BusinessContact; // alias
 
 module.exports.displayHomePage = (req, res, next) => {
-    BusinessContact.find((err, businessContacts) => {
+    BusinessContact.find().sort('name').exec((err, businessContacts) => {
         if (err) return console.error(err);
         res.render('business_contact/contacts', { title: 'Business Contacts', BusinessContacts: businessContacts });
     });
