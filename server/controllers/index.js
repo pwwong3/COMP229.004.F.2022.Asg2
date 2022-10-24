@@ -1,9 +1,9 @@
-/**********************
+/*******************************
  * File name: index.js
  * Name: Pak Wah WONG
  * StudentID: 301255741
  * Date: 2022.10.23
-**********************/
+*******************************/
 
 const express = require('express');
 const router = express.Router();
@@ -64,6 +64,8 @@ module.exports.processLoginPage = (req, res, next) => {
 }
 
 module.exports.performLogout = (req, res, next) => {
-    req.logout();
-    req.redirect('/');
+    req.logout(err => {
+        if (err) { return next(err); }
+        res.redirect('/');
+    });
 }

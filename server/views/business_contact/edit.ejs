@@ -1,0 +1,31 @@
+<%-include ../partials/header.ejs%>
+    <%-include ../partials/main_nav.ejs%>
+    <%-include ../partials/content.ejs%>
+    
+    <!-- Contect for the edit Aage-->
+    <main class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <form action="" class="form" method="POST">
+                    <div class="form-group">
+                        <label for="nameTextField">Contact Name</label>
+                        <input type="text" name="name" id="nameTextField" class="form-control" placeholder="Enter the Contact Name" value="<%= contact.name %>" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="numberTextField">Contact Number</label>
+                        <input type="text" name="number" id="numberTextField" class="form-control" placeholder="Enter the Contact Number" value="<%= contact.number %>" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="emailTextField">Contact Email</label>
+                        <input type="text" name="email" id="emailTextField" class="form-control" placeholder="Enter the Email Address" value="<%= contact.email %>" required />
+                    </div>
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-edit"> Submit</i>
+                    </button>
+                    <a href="/business-contact" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <%-include ../partials/bottom_nav.ejs%>
+<%-include ../partials/footer.ejs%>

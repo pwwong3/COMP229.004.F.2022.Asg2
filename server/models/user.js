@@ -1,9 +1,9 @@
-/**********************
+/*******************************
  * File name: user.js
  * Name: Pak Wah WONG
  * StudentID: 301255741
- * Date: 2022.10.22
-**********************/
+ * Date: 2022.10.23
+*******************************/
 
 // require modules for the User model
 let mongoose = require('mongoose');

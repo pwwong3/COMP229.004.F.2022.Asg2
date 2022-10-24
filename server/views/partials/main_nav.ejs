@@ -1,26 +1,29 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./Assets/images/logo_55.png" /></a>
+      <a class="navbar-brand" href="#"><img src="/Assets/images/logo_55.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link<% if (title == "Home"){ %> active<% } %>" aria-current="page" href="./">Home</a>
+            <a class="nav-link<% if (title == "Home"){ %> active<% } %>" aria-current="page" href="/"><i class="fas fa-lg fa-laptop-house"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link<% if (title == "About me"){ %> active<% } %>" aria-current="page" href="./about">About me</a>
+            <a class="nav-link<% if (title == "About me"){ %> active<% } %>" aria-current="page" href="/about"><i class="fas fa-info-circle"></i> About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link<% if (title == "Projects"){ %> active<% } %>" aria-current="page" href="./projects">Projects</a>
+            <a class="nav-link<% if (title == "Projects"){ %> active<% } %>" aria-current="page" href="/projects"><i class="fab fa-elementor"></i> Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link<% if (title == "Services"){ %> active<% } %>" aria-current="page" href="./services">Services</a>
+            <a class="nav-link<% if (title == "Services"){ %> active<% } %>" aria-current="page" href="/services"><i class="fas fa-cogs"></i> Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link<% if (title == "Contact"){ %> active<% } %>" aria-current="page" href="./contact">Contact</a>
+            <a class="nav-link<% if (title == "Business Contacts"){ %> active<% } %>" aria-current="page" href="/business-contact"><i class="fas fa-mobile-alt"></i>Business Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link<% if (title == "Contact"){ %> active<% } %>" aria-current="page" href="/contact"><i class="fas fa-mobile"> </i>Contact</a>
           </li>
         </ul>
       </div>
